@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind-Website</title>
-    <link rel="stylesheet" href="./main.css"/>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -177,19 +177,19 @@
 
     <section id="section3" class="bg-[#8EC2F2] text-white p-10">
       <h2 class="text-4xl font-bold pb-2 w-80 mx-auto text-center">What Clients Say</h2>
-      <p class="w-80 mx-auto text-center">
+      <p class="w-80 md:w-96 mx-auto text-center">
           Problems trying to resolve the conflict between 
           the two major realms of Classical physics: Newtonian mechanics 
       </p>
 
-      <div>
-        <div class="bg-white p-8 relative mt-8 mb-3">
+      <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 md:gap-8 lg:w-9/12 lg:mx-auto">
+        <div class="bg-white p-8 relative md:ml-8">
           <h5 class="text-[#252B42] font-bold text-2xl">Regina Milles</h5>
           <h6 class="text-[#737373] font-bold text-sm">Designer</h6>
           <img 
             src="./assets/imgs/stefan-stefancik-.jpg" 
             alt="Regina Milles"
-            class="rounded-full w-[72px] h-[72px] object-cover object-center absolute hidden"
+            class="rounded-full w-[72px] h-[72px] object-cover object-center absolute hidden md:block md:top-4 md:-left-12"
           >
           <p class="text-yellow-300 text-xl mb-3">&star; &star; &star; &star; &star;</p>
           <p class="text-[#737373]">
@@ -202,13 +202,13 @@
           </p>
         </div>
         
-        <div class="bg-white p-8 relative mb-3">
+        <div class="bg-white p-8 relative md:ml-8">
           <h5 class="text-[#252B42] font-bold text-2xl">Regina Milles</h5>
           <h6 class="text-[#737373] font-bold text-sm">Designer</h6>
           <img 
             src="./assets/imgs/joseph-gonzalez.jpg" 
             alt="Regina Milles"
-            class="rounded-full w-[72px] h-[72px] object-cover object-center absolute hidden"
+            class="rounded-full w-[72px] h-[72px] object-cover object-center absolute hidden md:block md:top-4 md:-left-12"
           >
           <p class="text-yellow-300 text-xl mb-3">&star; &star; &star; &star; &star;</p>
           <p class="text-[#737373]">
