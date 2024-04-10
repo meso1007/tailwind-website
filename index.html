@@ -9,126 +9,125 @@
   </head>
 
 <body>
-  <section>
-    <nav>
-      <div>
-        <a href="#">BrandName</a>
-        <img src="./assets/logos/icn-search.png" alt="search" />
-        <img src="./assets/logos/icn-shopping-cart.png" alt="shopping-cart" />
+  <section class="relative min-h-dvh">
+    <div class="absolute inset-0 bg-cover bg-center bg-[url('./Assets/imgs/family.jpg')]"></div>
+    <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black"></div>
+    <div class="relative z-10">
+      <nav class="pt-3 bg-blue-950 relative sm:bg-transparent text-white sm:flex md:flex-row lg:flex-row justify-around items-center pr-3 sm:pr-0 pl-3 sm:pl-0">
+        <div class="flex sm:flex-row justify-between items-center">
+          <a class="font-bold text-xl" href="#">BrandName</a>
+          <div class="sm:hidden flex flex-row gap-x-2 items-center">
+            <img src="./assets/logos/icn-search.png" alt="search" />
+            <img src="./assets/logos/icn-shopping-cart.png" alt="shopping-cart" />
 
-        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="./assets/logos/icn-menu.png" alt="Menu" />
-        </button>
-
-        <div id="navbarSupportedContent">
-          <ul>
-            <li>
-              <a aria-current="page" href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Product</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+            <label class="cursor-pointer" for="toggleButton">
+                <img src="./assets/logos/icn-menu.png" alt="Menu" />
+            </label>
+            <input type="checkbox" id="toggleButton" class="peer hidden" />
+            <div data-size="large" class="peer-checked:hidden absolute p-3 top-[44px] bg-blue-950 w-full right-0 text-center hidden sm:block data-[size=large]:block toggleButton">
+              <ul class="flex sm:flex-row flex-col">
+                <li>
+                  <a class="mr-3" aria-current="page" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="mr-3" href="#">Product</a>
+                </li>
+                <li>
+                  <a class="mr-3" href="#">Pricing</a>
+                </li>
+                <li>
+                  <a class="mr-3" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        
+        <ul class="hidden sm:flex flex-row gap-x-2 items-center">
+          <li>
+            <a class="mr-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li>
+            <a class="mr-3" href="#">Product</a>
+          </li>
+          <li>
+            <a class="mr-3" href="#">Pricing</a>
+          </li>
+          <li>
+            <a class="mr-3" href="#">Contact</a>
+          </li>
+        </ul>
 
-        <div id="navbarSupportedContent">
-          <ul>
+        <div class="hidden sm:block">
+          <ul class="flex flex-row items-center">
             <li>
-              <a href="#">Log in</a>
+              <a class="mr-3" href="#">Log in</a>
             </li>
             <li>
-              <button type="submit">
+              <button class="py-2 px-4 rounded text-white bg-blue-700" type="submit">
                 Become a member➝
               </button>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <div>
-      <div>
-        <div>
-          <h1>
-            We Ensure A Best Insurance Services
-          </h1>
-          <p>
-            We know how large objects will act, but things on a small scale.
-          </p>
-        </div>
-
-        <div>
-          <div>
-            <a href="#">Get Quote Now</a>
+      <div class="text-white flex justify-center items-center min-h-dvh h-full ml-0 sm:ml-10">
+        <div clss="sm:w-2/5 sm:flex flex-col">
+          <div class="mx-auto sm:mx-0 w-3/5 sm:w-2/5 md:w-2/5 lg:w-2/5 xl:w-2/5 flex flex-col">
+            <h5 class="mb-5 text-4xl md:text-6xl font-bold text-center sm:text-left">
+              We Ensure A Best Insurance Services
+            </h5>
+            <p class="mb-5 text-xl text-center sm:text-left">
+              We know how large objects will act, but things on a small scale just do not act that way.
+            </p>
           </div>
-          <div>
-            <button type="button">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div>
-      <div>
-        <div>
-          <h5>
-            We Ensure A Best Insurance Services
-          </h5>
-          <p>
-            We know how large objects will act, but things on a small scale.
-          </p>
-        </div>
-
-        <div>
-          <div>
-            <a href="#">Get Quote Now</a>
-          </div>
-          <div>
-            <button type="button">
-              Learn More
-            </button>
+          <div class="flex sm:flex-row flex-col items-center">
+            <div class="mb-5 sm:mb-0 py-2 px-4 rounded-full text-white bg-blue-700 inline-block">
+              <a href="#">Get Quote Now</a>
+            </div>
+            <div>
+              <button class="ml-0 sm:ml-5 py-2 px-4 rounded-full border-2 sm:border-white border-sky-500 sm:text-white text-sky-500" type="button">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+
+
+
   <section>
-    <div>
-      <div>
-        <div>
-          <img src="./assets/logos/icon-book.png" alt="book" />
-          <img src="./assets/logos/mobile-img.png" alt="mobile" />
-          <h5>Peace of Mind</h5>
-          <p>
+    <div class="bg-blue-950">
+      <div class="flex sm:flex-row flex-col text-white items-center">
+        <div class="w-3/5 mt-12 mb-12 ml-0 sm:ml-12 flex flex-col items-center">
+          <img src="./assets/logos/icon-book.png" alt="book" class="hidden sm:block" />
+          <img src="./assets/logos/mobile-img.png" alt="mobile" class="block sm:hidden" />
+          <h5 class="text-lg font-bold">Peace of Mind</h5>
+          <p class="text-center">
             So it really behaves like neither.Now we have given up.
           </p>
         </div>
 
-        <div>
-          <img src="./assets/logos/icon-bookmark.png" alt="bookmark" />
-          <img src="./assets/logos/mobile-img.png" alt="mobile" />
-          <h5>Peace of Mind</h5>
-          <p>
-            So it really behaves like neither.Now we have given up.
+        <div class="w-3/5 mb-12 mt-0 sm:mt-12 ml-0 sm:ml-12 mr-0 sm:mr-12 flex flex-col items-center">
+          <img src="./assets/logos/icon-bookmark.png" alt="bookmark" class="hidden sm:block" />
+          <img src="./assets/logos/mobile-img.png" alt="mobile" class="block sm:hidden" />
+          <h5 class="text-lg font-bold">Set For Life</h5>
+          <p class="text-center">
+          They were used to create the machines that launched
           </p>
         </div>
 
-        <div>
-          <img src="./assets/logos/icon-people.png" alt="people" />
-          <img src="./assets/logos/mobile-img.png" alt="mobile" />
-          <h5>Peace of Mind</h5>
-          <p>
-            So it really behaves like neither.Now we have given up.
+        <div class="w-3/5 mb-12 mt-0 sm:mt-12 mr-0 sm:mr-12 flex flex-col items-center">
+          <img src="./assets/logos/icon-people.png" alt="people" class="hidden sm:block" />
+          <img src="./assets/logos/mobile-img.png" alt="mobile" class="block sm:hidden" />
+          <h5 class="text-lg font-bold">100% Satisfaction</h5>
+          <p class="text-center">
+            So it really behaves like neither. Now we have given up.
           </p>
         </div>
       </div>
