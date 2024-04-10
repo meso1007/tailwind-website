@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind-Website</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind-Website</title>
-  <link rel="stylesheet" href="./main.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
 <body>
   <section>
@@ -136,236 +135,223 @@
     </div>
   </section>
 
-  <section id="section3">
-    <h2>What Clients Say</h2>
-    <p>
-      Problems trying to resolve the conflict between
-      the two major realms of Classical physics: Newtonian mechanics
-    </p>
-    <div>
-      <div>
-        <div>
-          <div style="width: 18rem;">
-            <div>
-              <h5>Regina Milles</h5>
-              <h6>Designer</h6>
-              <img src="./assets/imgs/stefan-stefancik-.jpg" alt="Regina Milles">
-              <p>&star; &star; &star; &star; &star;</p>
-              <p>
-                This proved to be impossible using the traditional
-                concepts of space and time. Einstein developed a
-                new view of time first and then space. This proved
-                to be impossible using the traditional concepts of
-                space and time. Einstein developed a new view
-                of time first and then space.
-              </p>
-            </div>
-          </div>
-        </div>
+    <section id="section3" class="bg-[#8EC2F2] text-white p-10">
+      <h2 class="text-4xl font-bold pb-2 w-80 mx-auto text-center">What Clients Say</h2>
+      <p class="w-80 md:w-96 mx-auto text-center">
+          Problems trying to resolve the conflict between 
+          the two major realms of Classical physics: Newtonian mechanics 
+      </p>
 
-        <div>
-          <div style="width: 18rem;">
-            <div>
-              <h5>Regina Milles</h5>
-              <h6>Designer</h6>
-              <img src="./assets/imgs/joseph-gonzalez.jpg" alt="Regina Milles">
-              <p>&star; &star; &star; &star; &star;</p>
-              <p>
-                This proved to be impossible using the traditional
-                concepts of space and time. Einstein developed a
-                new view of time first and then space. This proved
-                to be impossible using the traditional concepts of
-                space and time. Einstein developed a new view
-                of time first and then space.
-              </p>
-            </div>
-          </div>
+      <div class="grid grid-cols-[minmax(0,350px)] justify-center gap-4 mt-8 md:grid-cols-2 md:gap-8 lg:w-9/12 lg:mx-auto">
+        <div class="bg-white p-8 relative md:ml-8">
+          <h5 class="text-[#252B42] font-bold text-2xl">Regina Milles</h5>
+          <h6 class="text-[#737373] font-bold text-sm">Designer</h6>
+          <img 
+            src="./assets/imgs/stefan-stefancik-.jpg" 
+            alt="Regina Milles"
+            class="rounded-full w-[72px] h-[72px] object-cover object-center absolute hidden md:block md:top-4 md:-left-12"
+          >
+          <p class="text-yellow-300 text-xl mb-3">&star; &star; &star; &star; &star;</p>
+          <p class="text-[#737373]">
+              This proved to be impossible using the traditional 
+              concepts of space and time. Einstein developed a 
+              new view of time first and then space. This proved 
+              to be impossible using the traditional concepts of 
+              space and time. Einstein developed a new view 
+              of time first and then space.
+          </p>
         </div>
+        
+        <div class="bg-white p-8 relative md:ml-8">
+          <h5 class="text-[#252B42] font-bold text-2xl">Regina Milles</h5>
+          <h6 class="text-[#737373] font-bold text-sm">Designer</h6>
+          <img 
+            src="./assets/imgs/joseph-gonzalez.jpg" 
+            alt="Regina Milles"
+            class="rounded-full w-[72px] h-[72px] object-cover object-center absolute hidden md:block md:top-4 md:-left-12"
+          >
+          <p class="text-yellow-300 text-xl mb-3">&star; &star; &star; &star; &star;</p>
+          <p class="text-[#737373]">
+              This proved to be impossible using the traditional 
+              concepts of space and time. Einstein developed a 
+              new view of time first and then space. This proved 
+              to be impossible using the traditional concepts of 
+              space and time. Einstein developed a new view 
+              of time first and then space.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <section id="section4" class="bg-[#252B42] text-white p-10">
+    <h2 class="text-4xl font-bold pb-2 w-80 mx-auto text-center">Industry</h2>
+    <p class="w-80 md:w-96 mx-auto text-center mb-8">
+        Problems trying to resolve the conflict between 
+        the two major realms of Classical physics: Newtonian mechanics 
+    </p>
+
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div class="relative w-[fit-content] justify-self-center">
+          <img src="./assets/imgs/industry-1.jpg" alt="Florest">
+          <div class="absolute inset-x-0 bottom-0 p-4">
+              <h4 class="text-small">Tax Management</h4>
+              <h3 class="text-2xl my-2">Life Tips From Top Ten Adventure Travelers</h3>
+              <a 
+                href="#"
+                class="bg-[#23A6F0] rounded-3xl p-3 inline-block min-w-40 text-center"
+              >View Project</a>
+          </div>
+      </div>
+
+      <div class="relative w-[fit-content] justify-self-center">
+          <img src="./assets/imgs/industry-2.jpg" alt="Florest">
+          <div class="absolute inset-x-0 bottom-0 p-4">
+            <h4 class="text-small">Tax Management</h4>
+            <h3 class="text-2xl my-2">Life Tips From Top Ten Adventure Travelers</h3>
+            <a 
+              href="#"
+              class="bg-[#23A6F0] rounded-3xl p-3 inline-block min-w-40 text-center"
+            >View Project</a>
+          </div>
+      </div>
+
+      <div class="relative w-[fit-content] justify-self-center">
+          <img src="./assets/imgs/industry-3.jpg" alt="Florest">
+          <div class="absolute inset-x-0 bottom-0 p-4">
+            <h4 class="text-small">Tax Management</h4>
+            <h3 class="text-2xl my-2">Life Tips From Top Ten Adventure Travelers</h3>
+            <a 
+              href="#"
+              class="bg-[#23A6F0] rounded-3xl p-3 inline-block min-w-40 text-center"
+            >View Project</a>
+          </div>
+      </div>
+      
+      <div class="relative w-[fit-content] justify-self-center">
+          <img src="./assets/imgs/industry-4.jpg" alt="Florest">
+          <div class="absolute inset-x-0 bottom-0 p-4">
+            <h4 class="text-small">Tax Management</h4>
+            <h3 class="text-2xl my-2">Life Tips From Top Ten Adventure Travelers</h3>
+            <a 
+              href="#"
+              class="bg-[#23A6F0] rounded-3xl p-3 inline-block min-w-40 text-center"
+            >View Project</a>
+          </div>
       </div>
     </div>
   </section>
 
-  <section id="section4">
-    <h2>Industry</h2>
-    <p>
-      Problems trying to resolve the conflict between
-      the two major realms of Classical physics: Newtonian mechanics
-    </p>
-    <div>
-      <div>
-        <div>
-          <div>
-            <img src="./assets/imgs/industry-1.jpg" alt="Florest">
-            <div>
-              <div>
-                <h4>Tax Management</h4>
-                <h3>Life Tips From Top Ten Adventure Travelers</h3>
-                <a href="#">View Project</a>
-              </div>
-            </div>
-          </div>
+  <section id="section5" class="bg-[#252B42] p-10">
+      <h2 class="text-4xl font-bold text-white pb-2 w-80 mx-auto text-center">Pricing</h2>
+      <p class="w-80 md:w-96 mx-auto text-center text-white mb-8">
+          Problems trying to resolve the conflict between 
+          the two major realms of Classical physics: Newtonian mechanics 
+      </p>
+
+      <div class="grid grid-cols-[327px] gap-4 justify-center md:grid-cols-[minmax(0,327px)_minmax(0,327px)_minmax(0,327px)]">
+        <div class=" flex flex-col gap-4 bg-white p-6 rounded-md justify-self-center">
+            <h3 class="text-[#252B42] font-bold text-2xl text-center">FREE</h3>
+            <p class="text-[#737373] font-bold text-base text-center">
+                Organize across all apps by hand
+            </p>
+            <p class="text-[#23A6F0] text-center grid grid-cols-2 self-center w-auto gap-x-2 md:grid-cols-[70%_30%]">
+                <span class="text-4xl font-bold row-span-2 w-[fit-content] md:row-span-1">0.00</span>
+                <span class="text-base font-bold w-[fit-content] md:text-4xl">$</span>
+                <span class="text-sm w-[fit-content] md:col-span-2 md:w-full">Per Month</span>
+            </p>
+            <a 
+              href="#"
+              class="bg-[#23A6F0] rounded p-3 inline-block w-full text-center text-white font-bold order-last md:order-none"
+            >Try for free</a>
+            <ul class="flex flex-col gap-2">
+                <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                    Unlimited product updates
+                </li>
+                <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                    Unlimited product updates
+                </li>
+                <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                    Unlimited product updates
+                </li>
+                <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-white.svg')]">
+                    Unlimited product updates
+                </li>
+                <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-white.svg')]">
+                    Unlimited product updates
+                </li>
+            </ul>
         </div>
-        <div>
-          <div>
-            <img src="./assets/imgs/industry-2.jpg" alt="Florest">
-            <div>
-              <div>
-                <h4>Tax Management</h4>
-                <h3>Life Tips From Top Ten Adventure Travelers</h3>
-                <a href="#">View Project</a>
-              </div>
-            </div>
-          </div>
+
+        <div class=" flex flex-col gap-4 bg-white p-6 rounded-md justify-self-center">
+          <h3 class="text-[#252B42] font-bold text-2xl text-center">SILVER</h3>
+          <p class="text-[#737373] font-bold text-base text-center">
+              Organize across all apps by hand
+          </p>
+          <p class="text-[#23A6F0] text-center grid grid-cols-2 self-center w-auto gap-x-2 md:grid-cols-[70%_30%]">
+              <span class="text-4xl font-bold row-span-2 w-[fit-content] md:row-span-1">9.99</span>
+              <span class="text-base font-bold w-[fit-content] md:text-4xl">$</span>
+              <span class="text-sm w-[fit-content] md:col-span-2 md:w-full">Per Month</span>
+          </p>
+          <a 
+            href="#"
+            class="bg-[#23A6F0] rounded p-3 inline-block w-full text-center text-white font-bold order-last md:order-none"
+          >Try for free</a>
+          <ul class="flex flex-col gap-2">
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-white.svg')]">
+                  Unlimited product updates
+              </li>
+          </ul>
         </div>
-        <div>
-          <div>
-            <img src="./assets/imgs/industry-3.jpg" alt="Florest">
-            <div>
-              <div>
-                <h4>Tax Management</h4>
-                <h3>Life Tips From Top Ten Adventure Travelers</h3>
-                <a href="#">View Project</a>
-              </div>
-            </div>
-          </div>
+
+        <div class=" flex flex-col gap-4 bg-white p-6 rounded-md justify-self-center">
+          <h3 class="text-[#252B42] font-bold text-2xl text-center">GOLD</h3>
+          <p class="text-[#737373] font-bold text-base text-center">
+              Organize across all apps by hand
+          </p>
+          <p class="text-[#23A6F0] text-center grid grid-cols-2 self-center w-auto gap-x-2 md:grid-cols-[70%_30%]">
+              <span class="text-4xl font-bold row-span-2 w-[fit-content] md:row-span-1">19.99</span>
+              <span class="text-base font-bold w-[fit-content] md:text-4xl">$</span>
+              <span class="text-sm w-[fit-content] md:col-span-2 md:w-full">Per Month</span>
+          </p>
+          <a 
+            href="#"
+            class="bg-[#23A6F0] rounded p-3 inline-block w-full text-center text-white font-bold order-last md:order-none"
+          >Try for free</a>
+          <ul class="flex flex-col gap-2">
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+              <li class=" flex items-center gap-2 before:content-[url('./Assets/icon/check-green.svg')]">
+                  Unlimited product updates
+              </li>
+          </ul>
         </div>
-        <div>
-          <div>
-            <img src="./assets/imgs/industry-4.jpg" alt="Florest">
-            <div>
-              <div>
-                <h4>Tax Management</h4>
-                <h3>Life Tips From Top Ten Adventure Travelers</h3>
-                <a href="#">View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
-
-  <section id="section5">
-    <h2>Pricing</h2>
-    <p>
-      Problems trying to resolve the conflict between
-      the two major realms of Classical physics: Newtonian mechanics
-    </p>
-
-    <div>
-      <div>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h3>FREE</h3>
-                <p>
-                  Organize across all apps by hand
-                </p>
-                <p>
-                  <span>0.00</span>
-                  <span>$</span>
-                  <span>Per Month</span>
-                </p>
-                <a href="#">Try for free</a>
-                <ul>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <div>
-              <div>
-                <h3>SILVER</h3>
-                <p>
-                  Organize across all apps by hand
-                </p>
-                <p>
-                  <span>9.99</span>
-                  <span>$</span>
-                  <span>Per Month</span>
-                </p>
-                <a href="#">Try for free</a>
-                <ul>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <div>
-              <div>
-                <h3>GOLD</h3>
-                <p>
-                  Organize across all apps by hand
-                </p>
-                <p>
-                  <span>19.99</span>
-                  <span>$</span>
-                  <span>Per Month</span>
-                </p>
-                <a href="#">Try for free</a>
-                <ul>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                  <li>
-                    Unlimited product updates
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- section6 -->
-  <section class="section6 sm:px-36 px-20 py-28">
+                        
+   <!-- section6 -->
+   <section class="section6 sm:px-36 px-20 py-28">
     <style>
       .section6 {
         background-color: transparent;
