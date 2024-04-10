@@ -13,37 +13,10 @@
     <div class="absolute inset-0 bg-cover bg-center bg-[url('./Assets/imgs/family.jpg')]"></div>
     <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black"></div>
     <div class="relative z-10">
-      <nav class="pt-3 bg-blue-950 relative sm:bg-transparent text-white sm:flex md:flex-row lg:flex-row justify-around items-center pr-3 sm:pr-0 pl-3 sm:pl-0">
-        <div class="flex sm:flex-row justify-between items-center">
-          <a class="font-bold text-xl" href="#">BrandName</a>
-          <div class="sm:hidden flex flex-row gap-x-2 items-center">
-            <img src="./assets/logos/icn-search.png" alt="search" />
-            <img src="./assets/logos/icn-shopping-cart.png" alt="shopping-cart" />
-
-            <label class="cursor-pointer" for="toggleButton">
-                <img src="./assets/logos/icn-menu.png" alt="Menu" />
-            </label>
-            <input type="checkbox" id="toggleButton" class="peer hidden" />
-            <div data-size="large" class="peer-checked:hidden absolute p-3 top-[44px] bg-blue-950 w-full right-0 text-center hidden sm:block data-[size=large]:block toggleButton">
-              <ul class="flex sm:flex-row flex-col">
-                <li>
-                  <a class="mr-3" aria-current="page" href="#">Home</a>
-                </li>
-                <li>
-                  <a class="mr-3" href="#">Product</a>
-                </li>
-                <li>
-                  <a class="mr-3" href="#">Pricing</a>
-                </li>
-                <li>
-                  <a class="mr-3" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <nav class="group pt-3 bg-blue-950 relative sm:bg-transparent text-white flex flex-row justify-between sm:justify-around items-center pr-3 sm:pr-0 pl-3 sm:pl-0">
+        <a class="font-bold text-xl" href="#">BrandName</a>
         
-        <ul class="hidden sm:flex flex-row gap-x-2 items-center">
+        <ul class="hidden sm:flex flex-row gap-x-2 items-center group-has-[:checked]:flex group-has-[:checked]:flex-col group-has-[:checked]:absolute group-has-[:checked]:top-[44px] group-has-[:checked]:w-full group-has-[:checked]:bg-blue-950 group-has-[:checked]:right-0">
           <li>
             <a class="mr-3" aria-current="page" href="#">Home</a>
           </li>
@@ -58,6 +31,16 @@
           </li>
         </ul>
 
+        <div class="sm:hidden flex flex-row gap-x-2 items-center">
+          <img src="./assets/logos/icn-search.png" alt="search" />
+          <img src="./assets/logos/icn-shopping-cart.png" alt="shopping-cart" />
+
+          <label class="cursor-pointer" for="toggleButton">
+              <img src="./assets/logos/icn-menu.png" alt="Menu" />
+          </label>
+          <input type="checkbox" id="toggleButton" class="hidden" />
+        </div>
+        
         <div class="hidden sm:block">
           <ul class="flex flex-row items-center">
             <li>
@@ -97,9 +80,6 @@
       </div>
     </div>
   </section>
-
-
-
 
   <section>
     <div class="bg-blue-950">
@@ -359,7 +339,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        min-height: 100dvh;
       }
     </style>
     <p class="text-xl">Contact Us</p>
